@@ -1,0 +1,9 @@
+assets/
+results/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+!.env.example

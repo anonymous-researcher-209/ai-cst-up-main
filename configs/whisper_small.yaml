@@ -1,0 +1,28 @@
+# Whisper Small Model Configuration
+
+model:
+  name: "Whisper Small"
+  model_id: "openai/whisper-small"
+  type: "whisper"
+  
+  # Model-specific parameters
+  language: "hindi"
+  
+  # Generation parameters
+  generation:
+    max_new_tokens: 440
+    num_beams: 5
+    do_sample: false
+
+# Evaluation settings
+evaluation:
+  verbose: true
+  
+# Output settings
+output:
+  generate_reports: true
+  formats:
+    - text
+    - csv
+    - json
+    - markdown

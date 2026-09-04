@@ -1,0 +1,21 @@
+# Gemini Audio API Configuration
+
+model:
+  name: "Gemini Audio"
+  model_id: "gemini-1.5-flash"
+  type: "gemini"
+  
+  # Note: Requires GOOGLE_API_KEY environment variable
+
+# Evaluation settings
+evaluation:
+  verbose: true
+  
+# Output settings
+output:
+  generate_reports: true
+  formats:
+    - text
+    - csv
+    - json
+    - markdown

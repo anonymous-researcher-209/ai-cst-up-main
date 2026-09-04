@@ -1,0 +1,23 @@
+# Shunya Labs Hinglish ASR Model Configuration
+# Based on Whisper Medium (0.8B params)
+# Outputs mixed-script Hinglish (Hindi + English tokens)
+
+model:
+  name: "Shunya Labs Zero STT Hinglish"
+  model_id: "shunyalabs/zero-stt-hinglish"
+  type: "whisper"
+  
+  # Model-specific parameters
+  # Note: This model handles Hindi-English code-switching natively
+  # Output contains both Devanagari Hindi and English tokens
+  language: "hi"  # Primary language setting
+  
+  # Generation parameters
+  generation:
+    max_new_tokens: 440
+    num_beams: 5
+    do_sample: false
+
+# Evaluation settings
+evaluation:
+  verbose: true

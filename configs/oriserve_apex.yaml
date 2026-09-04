@@ -1,0 +1,22 @@
+# Oriserve Whisper Hindi2Hinglish Apex Model Configuration
+# Medium model (0.8B params) - Based on whisper-medium
+# Outputs Hinglish (romanized) text
+
+model:
+  name: "Oriserve Hindi2Hinglish Apex"
+  model_id: "Oriserve/Whisper-Hindi2Hinglish-Apex"
+  type: "whisper"
+  
+  # Model-specific parameters
+  # Note: This model outputs in romanized Hinglish, not Devanagari
+  language: "en"  # Model uses English tokens for Hinglish output
+  
+  # Generation parameters
+  generation:
+    max_new_tokens: 440
+    num_beams: 5
+    do_sample: false
+
+# Evaluation settings
+evaluation:
+  verbose: true

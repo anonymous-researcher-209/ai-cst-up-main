@@ -1,0 +1,19 @@
+# IndicWav2Vec Hindi CTC Configuration
+
+model:
+  name: "IndicWav2Vec Hindi (CTC)"
+  model_id: "ai4bharat/indicwav2vec-hindi"
+  type: "ctc"
+
+# Evaluation settings
+evaluation:
+  verbose: true
+  
+# Output settings
+output:
+  generate_reports: true
+  formats:
+    - text
+    - csv
+    - json
+    - markdown

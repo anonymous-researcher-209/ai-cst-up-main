@@ -1,0 +1,19 @@
+# Vaani Hindi Whisper Medium Model Configuration
+
+model:
+  name: "Whisper Medium Vaani Hindi"
+  model_id: "ARTPARK-IISc/whisper-medium-vaani-hindi"
+  type: "whisper"
+  
+  # Model-specific parameters
+  language: "hindi"
+  
+  # Generation parameters
+  generation:
+    max_new_tokens: 440
+    num_beams: 5
+    do_sample: false
+
+# Evaluation settings
+evaluation:
+  verbose: true

@@ -1,0 +1,24 @@
+# Qwen-Audio Configuration
+
+model:
+  name: "Qwen-Audio"
+  model_id: "Qwen/Qwen-Audio"
+  type: "qwen"
+  
+  # Generation parameters
+  generation:
+    max_new_tokens: 512
+    do_sample: false
+
+# Evaluation settings
+evaluation:
+  verbose: true
+  
+# Output settings
+output:
+  generate_reports: true
+  formats:
+    - text
+    - csv
+    - json
+    - markdown

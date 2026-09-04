@@ -1,0 +1,28 @@
+# AI4Bharat Whisper Hindi Medium Configuration
+
+model:
+  name: "AI4Bharat Whisper-Medium-Hi"
+  model_id: "vasista22/whisper-hindi-medium"
+  type: "whisper"
+  
+  # Model-specific parameters
+  language: "hindi"
+  
+  # Generation parameters
+  generation:
+    max_new_tokens: 440
+    num_beams: 5
+    do_sample: false
+
+# Evaluation settings
+evaluation:
+  verbose: true
+  
+# Output settings
+output:
+  generate_reports: true
+  formats:
+    - text
+    - csv
+    - json
+    - markdown
